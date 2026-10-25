@@ -1314,6 +1314,7 @@ name = "pipeline"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "click" },
     { name = "pandas" },
     { name = "psycopg", extra = ["binary", "pool"] },
     { name = "psycopg-binary" },
@@ -1330,6 +1331,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "click", specifier = ">=8.5.0" },
     { name = "pandas", specifier = ">=3.1.0" },
     { name = "psycopg", extras = ["binary", "pool"], specifier = ">=3.3.6" },
     { name = "psycopg-binary", specifier = ">=3.3.6" },
