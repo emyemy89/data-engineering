@@ -38,14 +38,13 @@ parse_dates = [
 @click.option('--pg-port', default=5432, type=int, help='PostgreSQL port')
 @click.option('--pg-db', default='ny_taxi', help='PostgreSQL database name')
 @click.option('--target-table', default='yellow_taxi_data', help='Target table name')
-def run(pg_user, pg_pass, pg_host, pg_port, pg_db, target_table):
+@click.option('--url', required=True, help='URL or local file path to the CSV/CSV.GZ data file')
+def run(pg_user, pg_pass, pg_host, pg_port, pg_db, target_table, url):
     year = 2021
     month = 1
     chunksize = 100000
 
     engine = create_engine(f'postgresql+psycopg://{pg_user}:{pg_pass}@{pg_host}:{pg_port}/{pg_db}')
-    prefix = 'https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/'
-    url = f'{prefix}/yellow_tripdata_{year}-{month:02d}.csv.gz'
 
     df_iter = pd.read_csv(
         url,
@@ -65,7 +64,8 @@ def run(pg_user, pg_pass, pg_host, pg_port, pg_db, target_table):
             )
             first = False
         df_chunk.to_sql(name=target_table, con=engine, if_exists='append')
-
+    df_zones = pd.read_csv('taxi_zone_lookup.csv')
+    df_zones.to_sql(name='zones', con=engine, if_exists='replace')
 
 
 if __name__=='__main__':

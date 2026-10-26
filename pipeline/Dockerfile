@@ -8,6 +8,6 @@ COPY pyproject.toml .python-version uv.lock ./
 RUN uv sync --locked --no-install-project
 
 # Copy from the host system to container
-COPY ingest_data.py . 
+COPY ingest_data.py taxi_zone_lookup.csv ./
 
 ENTRYPOINT ["python", "ingest_data.py"]
