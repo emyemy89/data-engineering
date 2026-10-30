@@ -227,6 +227,11 @@ __marimo__/
 *.tfstate.backup
 crash.log
 crash.*.log
+.terraform.tfstate.lock.info
+*.tfplan
+tfplan
+.terraformrc
+terraform.rc
 
 # Terraform variable files (may contain secrets)
 *.tfvars
