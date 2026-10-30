@@ -9,8 +9,8 @@ terraform {
 
 provider "google" {
   credentials = "./keys/my-creds.json"
-  project = "data-talks-data-engineering"
-  region  = "europe-north1"
+  project     = "data-talks-data-engineering"
+  region      = "europe-north1"
 }
 
 # Create a Google Cloud Storage bucket with auto-expiration rules
@@ -28,3 +28,10 @@ resource "google_storage_bucket" "demo-bucket" {
     }
   }
 }
+
+
+resource "google_bigquery_dataset" "demo_dataset" {
+  dataset_id = "demo_dataset"
+  location   = "EU"
+}
+
