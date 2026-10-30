@@ -245,3 +245,5 @@ override.tf.json
 
 # Google Cloud credentials
 keys/
+
+*.json
