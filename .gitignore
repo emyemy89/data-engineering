@@ -245,5 +245,5 @@ override.tf.json
 
 # Google Cloud credentials
 keys/
-
+profiles.yml
 *.json
