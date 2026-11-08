@@ -70,7 +70,7 @@ user:
         type: service_account
       method: service-account-json
       project: data-talks-data-engineering
-      schema: dbt_dev
+      schema: dbt_dev_eu
       scopes:
       - https://www.googleapis.com/auth/bigquery
       - https://www.googleapis.com/auth/cloud-platform
