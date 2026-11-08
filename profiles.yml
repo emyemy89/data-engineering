@@ -1,0 +1,82 @@
+user:
+  outputs:
+    dev:
+      keyfile_json:
+        auth_provider_x509_cert_url: https://www.googleapis.com/oauth2/v1/certs
+        auth_uri: https://accounts.google.com/o/oauth2/auth
+        client_email: terraform-runner@data-talks-data-engineering.iam.gserviceaccount.com
+        client_id: '102884850911079044400'
+        client_x509_cert_url: https://www.googleapis.com/robot/v1/metadata/x509/terraform-runner%40data-talks-data-engineering.iam.gserviceaccount.com
+        private_key: '-----BEGIN PRIVATE KEY-----
+
+          MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDCQSPjpg+bUkpu
+
+          kyYxHPS1qa0REuojGOksDwe2pE6jbVNb/+6Xl3BLqrYgsKP/OvXN3H5TdHMldD5M
+
+          EpZawA7SEQTrnivh6ZPTMQ6vHadhG0V7OuzBlpcK9ygml1jjPJssxdt1j3wd9w5g
+
+          5wlhAtSm0MKlid/S5RSARe1dE9c6y4dnvrdw+v+xM+cWZk1oobtAJ+iAeNEGxtQY
+
+          BVrz0AlxGXwvvBCmIJ3JTH9YK5w/37E/0rNYr5BqlvZZivGd4WnIBDzyOc9MgrUD
+
+          ToPU3lfbrycclMu5IoUQ4J3l527pmH6XvMhaCv2K3jtSL+4U8tqWSuuRwMtpu/0Q
+
+          4si/iPlRAgMBAAECggEAAndRPVKeYBprV3wGwBjeAnBlAhJ7ZnaqfySxtF/hn7GD
+
+          nWdiYApMIqnIJiIX8uWMuVBTSjvwOkl/gPe7cOt/RKtypIsdg4Czn7q/tPlrZpAy
+
+          EZ5t4wdGY50/pT3Goxvh3G+mmZd4u+inBhPoypJ+oJ+F2RQnA0ZlPDunB8d4tAZb
+
+          vjjO52tvlwPTvpHF2i7d3+h3Vo6UkZGSbwPq0TDBQrNsGedkIYdeMM00YMKb9Gcu
+
+          09b7XnWYlW/r59AKW2nnHiAZdQo4OlUAh+NG7Q9j9Ci4/1eI+ej+ynykoGVaYKt8
+
+          V/dTS0n/QNnSjRFdNubHE0NlMR33WBWuGfJUUvIAAQKBgQD6wYxQN1ed1vTXt3wZ
+
+          mu0qJxzbM2VaHEF3nYH4FNkK4mx2JD6DxV6cFc5bQydgvX/423k5N+denID8t/Hw
+
+          buSHTfKO5Zwg8OYS0u91ATnzcm1s4ZkncgbREfnUHTqA9wjr9Fj8EET5kpK9uaqt
+
+          NozaOyhBRi6R2mUNwPyjVjGPkQKBgQDGURqsE/7Dj1lJtdUmR1SMjT756MseQT80
+
+          6co0/d2f9J6fe6WKIiSN9Oja3LZ5WgYcYo/f1qOQ3ylBGP+4vHJCd9kxZBmZQ9lK
+
+          h9CnVp8oPfjBmFuLN7t8xTrA2UwTeppWf8ykGWBPZrustNq0erVkpq7VNug8nwZD
+
+          HokjydttwQKBgQCncOqy/eGBwnIIQbualXtctHVuYemBvHBy4ThSYgl0XTGzygv8
+
+          jaTZcS40fqkizidQE63k6VGUOclf96yUslfjicc4aFZTIMlhNH01kjYSPAyZsiNE
+
+          1b17ihda7pGMYGkStj1dQ7frN1bJXdt8gnqXlv0QaT7bogvsnTuWDg5WIQKBgGT+
+
+          YqXlXOV8eA0Yo57lzoHxYHPmgKI8uhKZSNepvRa7fZhcYJYzAwikA32JzweHt/r2
+
+          mqx0Y0Hg0+KJ95i9pzaAUERd5MdvjRXuimzdqRnWTXtRurTwQfOtgVk6kAqPck/A
+
+          r5eWMLze5Y5zX7lvkDbcx8ZfOu+8UHUX9OEb6DpBAoGAWnc5TgethVIVgIMYD5rm
+
+          dH+J3anuuSjCeKidY18Lg7eOF+6ZJon7Rgy3JNqx1gGgskal4u1M1yMmtK8ZUIN6
+
+          t8oZEvn9WbsdAHF50hFuk2YRJsA+TLbA1q8BixnXN4mUqc4yvX58FlRd5Cstwend
+
+          PCm/gHea46jU89c+z/CU/Jo=
+
+          -----END PRIVATE KEY-----
+
+          '
+        private_key_id: f11203d37cae0ab90a732b7e147c385dd8983d35
+        project_id: data-talks-data-engineering
+        token_uri: https://oauth2.googleapis.com/token
+        type: service_account
+      method: service-account-json
+      project: data-talks-data-engineering
+      schema: dbt_dev
+      scopes:
+      - https://www.googleapis.com/auth/bigquery
+      - https://www.googleapis.com/auth/cloud-platform
+      - https://www.googleapis.com/auth/drive
+      - https://www.googleapis.com/auth/userinfo.email
+      target_name: dev
+      threads: 4
+      type: bigquery
+  target: dev
