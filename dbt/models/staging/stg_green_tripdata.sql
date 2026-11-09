@@ -18,6 +18,8 @@ renamed as (
         ratecodeid,
         pulocationid,
         dolocationid,
+        {{get_trip_duration_minutes(lpep_pickup_datetime,
+        lpep_dropoff_datetime)}} as trip_duration,
         passenger_count,
         trip_distance,
         fare_amount,
