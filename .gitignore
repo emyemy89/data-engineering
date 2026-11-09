@@ -247,3 +247,4 @@ override.tf.json
 keys/
 
 *.json
+profiles.yml
