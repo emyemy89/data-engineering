@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: dim_zones
-    description: ""
+    description: "Taxi zone dimension table with location details"
     columns:
       - name: location_id
         data_type: int64
@@ -21,7 +21,7 @@ models:
         description: ""
 
   - name: fact_trips
-    description: ""
+    description: "Fact table with all taxi trips including trip and payment details"
     columns:
       - name: vendor_id
         data_type: int64
