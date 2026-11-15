@@ -252,3 +252,6 @@ profiles.yml
 .bruin.yml
 /duckdb.db
 /duckdb.db.wal
+logs/runs
+logs/*.log
+*.py[cod]
