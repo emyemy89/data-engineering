@@ -255,3 +255,6 @@ profiles.yml
 logs/runs
 logs/*.log
 *.py[cod]
+*.xml
+spark/.python-version
+*.lock
