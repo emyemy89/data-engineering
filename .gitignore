@@ -259,3 +259,4 @@ logs/*.log
 spark/.python-version
 *.lock
 spark/fhvhv_tripdata_2021-01.csv
+/spark/fhvhv_tripdata_2021-01
