@@ -245,5 +245,19 @@ override.tf.json
 
 # Google Cloud credentials
 keys/
-
+profiles.yml
 *.json
+profiles.yml
+
+.bruin.yml
+/duckdb.db
+/duckdb.db.wal
+logs/runs
+logs/*.log
+*.py[cod]
+*.xml
+spark/.python-version
+*.lock
+spark/fhvhv_tripdata_2021-01.csv
+/spark/fhvhv_tripdata_2021-01
+/spark/code/data
